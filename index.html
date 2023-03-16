@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BookShelf Apps</title>
+</head>
+<body>
+    <div class="container">
+        <div class="app">
+            <div class="profile">
+                <div class="left-item">
+                    <img src="assets/profile.png" alt="" class="profile-img">
+                </div>
+                <div class="right-item">
+                    <div class="top-item">
+                        <p style="margin-right: 20px;text-align: center;">234
+                            <br>
+                            Book
+                        </p>
+    
+                        <p style="margin-right: 20px;text-align: center;">345
+                            <br>
+                            Followers
+                        </p>
+                        <p style="text-align: center;">124
+                            <br>
+                            Following
+                            <br>
+                        </p>
+                    </div>
+                    <div class="bottom-item">
+                        <button class="add-book" onclick="document.getElementById('add-modal').style.display='block'">Add Book</button>
+                        <div class="modal" id="add-modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="document.getElementById('add-modal').style.display='none'">&times;</span>
+                                <form id="sendBook">
+                                    <div class="input">
+                                        <label for="title">Judul</label>
+                                        <input id="title" type="text" required>
+                                    </div>
+                                    <div class="input">
+                                        <label for="author">Penulis</label>
+                                        <input id="author" type="text" required>
+                                    </div>
+                                    <div class="input">
+                                        <label for="year">Tahun</label>
+                                        <input id="year" type="number" required>
+                                    </div>
+                                    <div class="input">
+                                        <label for="finishCheck">Selesai dibaca</label>
+                                        <input id="finishCheck" type="checkbox">
+                                    </div>
+                                    <button id="submitBook" type="submit" class="submitBook">Masukkan Buku ke rak </button>
+                                    <button class="cancelSubmit" onclick="document.getElementById('add-modal').style.display='none'">Cancel</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="show-book">
+                <div class="not-finish">
+                    <h3 style="text-align: center;">Belum Selesai Dibaca</h3>
+                    <div class="book">
+                        <div class="left-book" >
+                            <h4 style="margin: 0.5rem 1rem;">Judul</h4>
+                            <p style="margin: 0.5rem 1rem;">penulis</p>
+                            <p style="margin: 0 1rem;">tahun</p>
+                        </div>
+                        <div class="right-book">
+                            
+                            <button class="finish">selesai</button>
+                            <button class="delete">hapus</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="finish-read">
+                    <h3 style="text-align: center;">Selesai Dibaca</h3>
+                </div>
+                
+            </div>
+            <div class="footer-menu">
+                <p style="margin-right: 34px;">Profile</p>
+                <p style="margin-right: 34px;">My Books</p>
+                <p style="margin-right: 34px;">Home</p>
+                <p>Search</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
