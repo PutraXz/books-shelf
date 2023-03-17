@@ -50,8 +50,8 @@
                                         <input id="year" type="number" required>
                                     </div>
                                     <div class="input">
-                                        <label for="finishCheck">Selesai dibaca</label>
-                                        <input id="finishCheck" type="checkbox">
+                                        <label for="check">Selesai dibaca</label>
+                                        <input id="check" type="checkbox">
                                     </div>
                                     <button id="submitBook" type="submit" class="submitBook">Masukkan Buku ke rak </button>
                                     <button class="cancelSubmit" onclick="document.getElementById('add-modal').style.display='none'">Cancel</button>
@@ -64,7 +64,7 @@
             <div class="show-book">
                 <div class="not-finish">
                     <h3 style="text-align: center;">Belum Selesai Dibaca</h3>
-                    <div class="book">
+                    <div class="book" id="notFinish">
                         <div class="left-book" >
                             <h4 style="margin: 0.5rem 1rem;">Judul</h4>
                             <p style="margin: 0.5rem 1rem;">penulis</p>
@@ -79,6 +79,16 @@
                 </div>
                 <div class="finish-read">
                     <h3 style="text-align: center;">Selesai Dibaca</h3>
+                    <div class="book" id="finishBook">
+                        <div class="left-book" >
+                            
+                        </div>
+                        <div class="right-book">
+                            
+                            <button class="finish">selesai</button>
+                            <button class="delete">hapus</button>
+                        </div>
+                    </div>
                 </div>
                 
             </div>
@@ -90,5 +100,6 @@
             </div>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
