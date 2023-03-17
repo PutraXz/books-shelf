@@ -122,7 +122,10 @@ body, html{
 }
 .right-book{
     flex: 0 0 40%;
+}
+.delete-button {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 .finish{

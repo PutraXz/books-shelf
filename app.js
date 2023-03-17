@@ -43,7 +43,7 @@ function showBooks() {
           : ""
       }
       <div class="delete-button">
-          <button class="delete" data-index="${index}">hapus</button>
+        <button class="delete" data-index="${index}">hapus</button>
         </div>
       </div>
     `;
