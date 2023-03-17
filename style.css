@@ -32,20 +32,6 @@ body, html{
         margin: 0 auto;
     }
     .modal-content{
-        width: 90% ;
-        height: 41vh ;
-    }
-}
-@media screen and (max-width:425px) {
-    .container{
-        padding: 0;
-    }
-    .app{
-        width: 100%;
-        height: 10px;
-        margin: 0 auto;
-    }
-    .modal-content{
         width: 90% !important;
         height: 41vh !important;
     }
