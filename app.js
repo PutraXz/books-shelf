@@ -42,9 +42,7 @@ function showBooks() {
           ? `<button class="finish" data-index="${index}">selesai</button>`
           : ""
       }
-      <div class="delete-button">
-        <button class="delete" data-index="${index}">hapus</button>
-        </div>
+        <button class="delete" data-index="${index}" ${ !book.isFinished ? `` : "style='margin-top:12px'" }>hapus</button>
       </div>
     `;
     if (book.isFinished) {
